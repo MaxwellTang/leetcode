@@ -1,2 +1,2 @@
 # leetcode
-recording leetcode OJ
+leetcode OJ
