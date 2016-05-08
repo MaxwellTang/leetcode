@@ -11,25 +11,28 @@ Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 */
 class Solution {
+
 public:
+
     vector<int> twoSum(vector<int>& nums, int target) {
-         vector<int> res;
-        if(nums.size() == 0)
+
+        vector<int> res;
+        if(nums.length() == 0)
             return res;
 
-        for(int i=0;i<nums.size();i++)
+        for(i=0;i<nums.length();i++)
         {
-             for(int j=i+1;j<nums.size();j++)
+             for(j=0;j<nums.length();j++)
              {
-                if((nums[i]+nums[j]) == target)
+                if((nums(i)+nums(j)) == target)
                 {
-                     res.push_back(i);
-                     res.push_back(j);
+                     res.append(i);
                 }
              }
         }
 
         return res;
-       
+
     }
+
 };
